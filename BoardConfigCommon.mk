@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-BOARD_VENDOR := xiaomi
+BOARD_VENDOR := meizu
 
-COMMON_PATH := device/xiaomi/sdm845-common
+COMMON_PATH := device/meizu/sdm845-common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -37,7 +37,7 @@ BOARD_RAMDISK_OFFSET := 0x01000000
 NEED_KERNEL_MODULE_SYSTEM := true
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
+TARGET_KERNEL_SOURCE := kernel/meizu/sdm845
 
 # Platform
 #TARGET_BOARD_PLATFORM := sdm845
@@ -120,4 +120,4 @@ PRODUCT_COMPATIBILITY_MATRIX_LEVEL_OVERRIDE := 27
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/sdm845-common/BoardConfigVendor.mk
+-include vendor/meizu/sdm845-common/BoardConfigVendor.mk
