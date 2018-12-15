@@ -34,7 +34,6 @@ typedef struct {
 } device_t;
 
 static const device_t devices[] = {
-    {"beryllium", "Pocophone F1"},
     {"dipper", "Xiaomi Mi 8"},
     {"equuleus", "Xiaomi Mi 8 Pro"},
     {"perseus", "Xiaomi Mi MIX 3"},
