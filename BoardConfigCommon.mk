@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-BOARD_VENDOR := xiaomi
+BOARD_VENDOR := meizu
 
-COMMON_PATH := device/xiaomi/sdm845-common
+COMMON_PATH := device/meizu/sdm845-common
 
 # Architecture
 TARGET_ARCH := arm64
@@ -38,7 +38,7 @@ TARGET_KERNEL_ARCH := arm64
 ifeq ($(TARGET_PREBUILT_KERNEL),)
   TARGET_KERNEL_CLANG_COMPILE := true
   TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-linux-android-
-  TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm845
+  TARGET_KERNEL_SOURCE := kernel/meizu/sdm845
 endif
 
 # Platform
@@ -90,7 +90,7 @@ JAVA_SOURCE_OVERLAYS := \
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 57453555712
 
@@ -117,10 +117,6 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
 # Recovery
 TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 
-# Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_xiaomi
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
-
 # RenderScript
 OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 
@@ -140,4 +136,4 @@ BOARD_VNDK_VERSION := current
 PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Inherit from the proprietary version
--include vendor/xiaomi/sdm845-common/BoardConfigVendor.mk
+-include vendor/meizu/sdm845-common/BoardConfigVendor.mk
