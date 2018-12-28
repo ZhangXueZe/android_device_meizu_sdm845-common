@@ -82,6 +82,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
 
+# # NFC
+# PRODUCT_PACKAGES += \
+#     com.android.nfc_extras \
+#     NfcNci \
+#     Tag
+
 # Net
 PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
@@ -109,9 +115,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     telephony-ext
 
-# TextClassifier
+# VNDK
 PRODUCT_PACKAGES += \
-    textclassifier.bundle1
+    vndk_package
 
 # VNDK-SP
 PRODUCT_PACKAGES += \
