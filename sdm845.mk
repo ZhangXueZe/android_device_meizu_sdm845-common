@@ -60,11 +60,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.meizu_sdm845
 
-# NFC
-PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    NfcNci \
-    Tag
+# # NFC
+# PRODUCT_PACKAGES += \
+#     com.android.nfc_extras \
+#     NfcNci \
+#     Tag
 
 # Net
 PRODUCT_PACKAGES += \
