@@ -108,6 +108,8 @@ TARGET_USES_MKE2FS := true
 
 TARGET_COPY_OUT_VENDOR := vendor
 
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wake_gesture"
 
