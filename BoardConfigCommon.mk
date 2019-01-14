@@ -107,6 +107,9 @@ OVERRIDE_RS_DRIVER := libRSDriver_adreno.so
 # RIL
 TARGET_RIL_VARIANT := caf
 
+# Root
+BOARD_ROOT_EXTRA_FOLDERS := bt_firmware dsp firmware persist
+
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
