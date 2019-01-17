@@ -3,6 +3,7 @@ lib64/com.qualcomm.qti.ant@1.0.so
 -lib64/libantradio.so
 lib/com.qualcomm.qti.ant@1.0.so
 -lib/libantradio.so
+-xbin/antradio_app
 
 # CNE
 etc/cne/andsfCne.xml
@@ -75,7 +76,7 @@ lib64/vendor.qti.hardware.iop@2.0.so
 lib64/vendor.qti.hardware.perf@1.0.so
 
 # Power-off alarms
-etc/permissions/vendor-qti-hardware-alarm.xml
+#etc/permissions/vendor-qti-hardware-alarm.xml
 
 # QMI
 etc/permissions/qti_libpermissions.xml
